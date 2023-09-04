@@ -1,0 +1,3 @@
+/*    */ - comment
+gcc <filename>.c to compile
+./a.out to run
