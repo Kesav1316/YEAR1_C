@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main()
+int main() 
 {
 int a1,a2,sum;
 printf("Enter the values");
