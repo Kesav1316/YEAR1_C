@@ -1,1 +1,1 @@
-gets(str);
+printf

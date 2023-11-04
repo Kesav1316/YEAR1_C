@@ -1,3 +1,13 @@
+//
 /*    */ - comment
 gcc <filename>.c to compile
 ./a.out to run
+
+
+
+
+gcc <filename> -o <outputfilename>
+./<outputfilename>
+
+TO RUN MATH COMMANDS 
+gcc <filename> -lm 
