@@ -1,12 +1,15 @@
+//USE %p to print pointers - memory address
 #include <stdio.h>
 
 int main() {
-    int a , c , *r , *p;
+    int a , c , x , y , *r , *p;
     a = 5;
     c = 6;
-    p = &a;
+    p = &a; //MEMORY ADDRESS STORES AT POINTER
     r = &c;
-    printf("The memory is: %p %p",p,r);
+    x = *p; //*pointer GIVES VALUE IN MEMORY ADDRESS
+    y = *r;
+    printf("The memory is: %p\n%p\n%d\n%d",p,r,x,y);
 
     return 0;
 }   

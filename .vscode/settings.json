@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "STUDENT.C": "cpp",
-        "Q1.C": "cpp"
+        "Q1.C": "cpp",
+        "createmanystructure": "c"
     }
 }
