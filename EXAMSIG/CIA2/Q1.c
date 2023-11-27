@@ -24,20 +24,20 @@ int calcdays(int d ,int m ,int y) {
         feb = 29;
     } else feb = 28;
 
-    for ( int i = 1 ; i <=m ; i++ ) {
+    for ( int i = 1 ; i <m ; i++ ) {
         if ( i <m && i == 1 ||i== 3 ||i== 5 ||i== 7 ||i== 8 ||i== 10 ||i== 12) {
             days +=31;
         }
         else if ( i < m && i == 2 ){
             days +=feb;
         }
-        else if (i == m) 
-        days += d;
+
         else if ( i <m && i == 2 ||i== 4 ||i== 6 ||i== 9 ||i== 11 ){
             days+=30;
         }
 
     }
+    days+=d;
     return days;
 
 
