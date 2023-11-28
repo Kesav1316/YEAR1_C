@@ -17,6 +17,7 @@ void remove_first(char *str_pt, char x){
     
     
     
+    
     // Within this 
 }
 

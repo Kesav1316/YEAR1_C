@@ -4,21 +4,57 @@ struct date {
 }d1,d2;
 
 int main() {
-    int calcdays(int , int , int);
-    int a;
+    int calcdaysfromnewyearig(int , int , int);
+    int calcdiff(int , int);
+    int calctotal(int , int , int);
+    int a,b,diff,days;
     printf("Enter DD MM YYYY of date1:");
     scanf("%d%d%d",&d1.dd,&d1.mm,&d1.yy);
-    //printf("Enter DD MM YYYY of date2:");
-    //scanf("%d%d%d",&d2.dd,&d2.mm,&d2.yy);
-    a = calcdays(d1.dd,d1.mm,d1.yy);
-    printf("%d",a);
+    printf("Enter DD MM YYYY of date2:");
+    scanf("%d%d%d",&d2.dd,&d2.mm,&d2.yy);
+    a = calctotal(d1.dd,d1.mm,d1.yy);
+    b = calctotal(d2.dd,d2.mm,d2.yy);
+    if (a > b) {
+        diff = a-b;
+    }
+    else {
+        diff = b-a;
+    }
+    printf("%d",diff);
 
 
 }
 
+int calctotal(int d , int m , int y) {
+    int calcdaysfromnewyearig(int , int , int);
+    int totaldays = 0,dnewyear,yeardays;
+    for (int i=0 ; i<y ;i++) {
+        if (y%4 == 0) {
+        yeardays = 366;
+    } 
+    else{
+        yeardays = 365;
+    }
+    totaldays += i*yeardays ;
+    }
+
+    dnewyear = calcdaysfromnewyearig(d,m,y);
+    totaldays +=dnewyear;
+    return totaldays;
+}
+
+int calcdiff(int d1 , int d2) {
+    if(d1>d2) {
+        return d1-d2;
+    }
+    else {
+        return d2-d1;
+    }
+}
 
 
-int calcdays(int d ,int m ,int y) {
+
+int calcdaysfromnewyearig(int d ,int m ,int y) {
     int feb,days = 0 ,mdays = 30;
     if (y%4 == 0) {
         feb = 29;
@@ -39,8 +75,4 @@ int calcdays(int d ,int m ,int y) {
     }
     days+=d;
     return days;
-
-
-
-
 }
