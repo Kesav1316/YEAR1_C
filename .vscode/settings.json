@@ -2,6 +2,8 @@
     "files.associations": {
         "STUDENT.C": "cpp",
         "Q1.C": "cpp",
-        "createmanystructure": "c"
+        "createmanystructure": "c",
+        "AREAPERMIETER(CALLBYREFERENCE).C": "cpp",
+        "AREAPERMIETER_CALLBYREFERENCE.C": "cpp"
     }
 }

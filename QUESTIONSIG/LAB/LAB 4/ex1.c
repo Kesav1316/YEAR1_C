@@ -46,7 +46,11 @@ int main()
     // YOUR CODE GOES HERE 
     
     // TILL HERE
-  
+    printf("Enter string");
+    scanf("%s",str_input);
+    str_ptr = &str_input;
+    printf("%s %s",str_input , str_ptr);
+
     // 2) Test and Learn how the following works
     // Computes the length of the string :: strlen()
     printf("String 1 length: %ld\n", strlen(str_test));

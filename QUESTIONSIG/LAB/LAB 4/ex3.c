@@ -23,12 +23,20 @@ void remove_first(char *str_pt, char x){
 
 
 bool aparecium(char *str_pt_1, char *str_pt_2){
+    char i;
     bool flag = true;
     /* CASE SENSITIVE
     Input : Two string pointers
     Output: change flag = flase when two strings doesnot come from same set of characters
     */
     // 3) Your CODE goes here
+    while (i!= "\0") {
+        if (*str_pt_1 != *str_pt_2) {
+            flag = false;
+            
+        }
+        i++;
+    }
     
     
     
